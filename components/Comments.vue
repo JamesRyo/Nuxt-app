@@ -75,6 +75,10 @@
     align-items: center;
     margin-top: 20px;
   }
+
+  .thumbsup{
+    cursor: pointer;
+  }
   
   .vote {
     display: flex;
