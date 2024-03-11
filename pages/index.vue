@@ -148,7 +148,6 @@ export default defineComponent({
 }
 
 .mainPart {
-  
   padding-top: 50px;
   padding-bottom:50px;
   color:#fff
@@ -167,7 +166,6 @@ export default defineComponent({
 
 .thumbs {
   display: flex;
-  
 }
 
 .thumbsup {
@@ -176,7 +174,6 @@ export default defineComponent({
   border-radius: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
-  
   margin-right: 15px;
   cursor: pointer; /* Add cursor pointer */
   fill:gray;
@@ -228,7 +225,6 @@ export default defineComponent({
   color:#222222;
   border-radius: 15px;
   font-size:15px;
-  
 }
 .colorButton{
   display:flex;
