@@ -195,7 +195,6 @@ export default defineComponent({
   margin-top: 15px;
   margin-bottom: 15px;
   padding-bottom: 30px;
-  
 }
 
 .mainInput {
@@ -257,7 +256,6 @@ label {
 label:after {
 	content: '';
 	position: absolute;
-	
 	left: 0px;
 	width: 25px;
 	height: 25px;
