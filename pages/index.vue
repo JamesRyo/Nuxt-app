@@ -99,8 +99,6 @@ export default defineComponent({
       lightMiddlePart:{
         borderBottom: 'solid 3px #E9EBEE',
       },
-      
-      
     }
     
   },

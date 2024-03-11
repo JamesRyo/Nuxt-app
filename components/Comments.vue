@@ -27,9 +27,9 @@
       return {
         number: 0,
         initialNumber: 0,
-        showFullContent: false ,// Add a boolean to control full content display
-        thumbsupColor: 'gray', // Initial color
-        thumbsdownColor: 'gray', // Initial color
+        showFullContent: false ,
+        thumbsupColor: 'gray',
+        thumbsdownColor: 'gray', 
       };
     },
     methods: {
