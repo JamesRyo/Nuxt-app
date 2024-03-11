@@ -25,8 +25,8 @@
     props: ['commentContent'],
     data() {
       return {
-        number: 0,
-        initialNumber: 0,
+        number: 1,
+        initialNumber: 1,
         showFullContent: false ,
         thumbsupColor: 'gray',
         thumbsdownColor: 'gray', 
@@ -48,10 +48,13 @@
         },
         decrease() {
         if (this.number > this.initialNumber ||this.number === this.initialNumber) {
-        this.number--;
-        this.rightDisabled = true;
-        this.leftDisabled = false;
-        this.changeThumbsColor('thumbsdown');
+          if(this.number>0){
+
+            this.number--;
+            this.rightDisabled = true;
+            this.leftDisabled = false;
+            this.changeThumbsColor('thumbsdown');
+          }
         }
       },
       changeThumbsColor(thumbsType) {
@@ -94,7 +97,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-top: 20px;
+    
   }
 
   .thumbsup{
@@ -103,7 +106,9 @@
   }
   
   .vote {
+    margin-top:20px;
     display: flex;
     justify-content: space-between;
+    align-items: center
   }
   </style>
