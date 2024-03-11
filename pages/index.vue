@@ -85,8 +85,7 @@ export default defineComponent({
       },
       darkThumbs:{
         backgroundColor: '#333333',
-        
-      
+
       },
       lightThumbs:{
         backgroundColor: '#F0F2F5',
