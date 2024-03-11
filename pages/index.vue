@@ -102,10 +102,8 @@ export default defineComponent({
       thumbsupColor: 'gray',
       thumbsdownColor: 'gray',
     }
-    
   },
 
-  
   methods: {
     increase() {
         this.thumbsupColor = 'blue';
