@@ -146,7 +146,7 @@ export default defineComponent({
         else{
           this.thumbsdownColor = 'gray';
         }
-          this.thumbsupColor = 'gray'; 
+          this.thumbsupColor = 'gray';
         }
       },
       toggleDarkMode() {
