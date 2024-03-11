@@ -19,7 +19,7 @@
       </div>
     </div>
   </template>
-  
+
   <script>
   export default {
     props: ['commentContent'],
@@ -69,7 +69,7 @@
           this.thumbsdownColor = 'gray';
         }
           
-          this.thumbsupColor = 'gray'; // Reset thumbsup color
+          this.thumbsupColor = 'gray';
         }
       }
     }

@@ -146,13 +146,11 @@ export default defineComponent({
         else{
           this.thumbsdownColor = 'gray';
         }
-          
           this.thumbsupColor = 'gray'; // Reset thumbsup color
         }
       },
       toggleDarkMode() {
       // Reset thumbs colors when toggling dark mode
-      
     }
       
 
