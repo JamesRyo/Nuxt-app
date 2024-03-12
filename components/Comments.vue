@@ -25,11 +25,11 @@
     props: ['commentContent'],
     data() {
       return {
-        number: 1,
-        initialNumber: 1,
+        number: 0,
+        initialNumber: 0,
         showFullContent: false ,
         thumbsupColor: 'gray',
-        thumbsdownColor: 'gray', 
+        thumbsdownColor: 'gray',
       };
     },
     methods: {
@@ -38,25 +38,28 @@
       },
       // Your voting methods
       increase() {
-
-        if (this.number < this.initialNumber||this.number === this.initialNumber) {
-        this.number++;
-        this.leftDisabled = true;
-        this.rightDisabled = false;
-        this.changeThumbsColor('thumbsup');
-        }
+  if (this.number === this.initialNumber || this.number < this.initialNumber) {
+            this.number++;
+            this.changeThumbsColor('thumbsup');
+          } else {
+            // If the thumbs up button is clicked again, decrease the number
+            this.number--;
+            this.changeThumbsColor('thumbsup');
+          }
         },
         decrease() {
-        if (this.number > this.initialNumber ||this.number === this.initialNumber) {
-          if(this.number>0){
-
-            this.number--;
-            this.rightDisabled = true;
-            this.leftDisabled = false;
+          if (this.number === this.initialNumber || this.number > this.initialNumber) {
+            if (this.number > 0) {
+              // If the number is greater than 0, decrease it
+              this.number--;
+              this.changeThumbsColor('thumbsdown');
+            }
+          } else {
+            // If the thumbs down button is clicked again, increase the number
+            this.number++;
             this.changeThumbsColor('thumbsdown');
           }
-        }
-      },
+        },
       changeThumbsColor(thumbsType) {
         if (thumbsType === 'thumbsup') {
           if(this.number !== this.initialNumber)
